@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OCTO FAMILY - Friendship Day</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+   * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+      color: #333;
+      padding: 2rem;
+      overflow-x: hidden;
+      position: relative;
+      animation: backgroundShift 20s infinite alternate ease-in-out;
+    }
+
+    @keyframes backgroundShift {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: auto;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .glow {
+      font-size: 3em;
+      color: #fff;
+      text-shadow: 0 0 15px #ff00cc, 0 0 30px #ff00cc;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    .subtitle {
+      font-size: 1.5em;
+      margin: 1rem 0 2rem;
+      color: #fff;
+      text-shadow: 0 0 5px #ff9ee7;
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem 1rem;
+      animation: zoomIn 1.5s ease-in-out;
+    }
+
+    .card {
+      background: linear-gradient(145deg, #ffffff, #ffe6f0);
+      padding: 1.5rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: popIn 1s ease forwards;
+      transform-origin: center;
+    }
+
+    .card:hover {
+      transform: rotate(1deg) scale(1.08);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    .card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 1rem;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .card:hover img {
+      transform: scale(1.1) rotate(-1deg);
+    }
+
+    .card h3 {
+      color: #d63384;
+      margin-bottom: 0.5rem;
+      font-size: 1.2em;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #444;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    .footer {
+      margin-top: 3rem;
+      font-size: 1.3em;
+      color: #fff;
+      text-shadow: 0 0 8px #ff66cc;
+      animation: bounceIn 2s ease-in-out;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc; }
+      to { text-shadow: 0 0 20px #ff99cc, 0 0 40px #ff99cc; }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.95); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: translateY(300px); opacity: 0; }
+      60% { transform: translateY(-20px); opacity: 1; }
+      80% { transform: translateY(10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="glow">💙 Happy Friendship Day 💙</h1>
+    <h2 class="subtitle">To the unstoppable OCTO FAMILY ♾️</h2>
+<div id="carousel" class="subtitle" style="margin-bottom: 2rem;">
+  <span id="quote">"Friends like stars — always shining!"</span>
+</div>
+
+    <div class="card-container">
+      <!-- Yoshii -->
+      <div class="card">
+        <img src="https://ik.imagekit.io/fu4uxhoyq/yoshii.jpg?updatedAt=1754202641426" alt="Yoshitha">
+        <h3>📸 Yoshii</h3>
+        <p>Our stunning logic queen! ✨ When anyone feels down, she's the first to lift us up with her calm, clear mind. Her phone gallery is 90% selfies and group pics. With her around, we always find the perfect pose, the perfect caption, and the perfect logic to solve life’s mess!</p>
+      </div>
+
+      <!-- Suji -->
+      <div class="card">
+        <img src="https://ik.imagekit.io/fu4uxhoyq/suji.jpg?updatedAt=1754202321439" alt="Suji">
+        <h3>🍼 Suji (Baby Bondam)</h3>
+        <p>We call her our 'Baby Bondam' but she’s secretly the most matured one. She’s caring, emotional, and always there with the best advice. Whether it’s exam tension or just random panic, she freaks out in the cutest way possible — but still figures everything out like a true champ!</p>
+      </div>
+
+      <!-- Raji -->
+      <div class="card">
+        <img src="https://ik.imagekit.io/fu4uxhoyq/rajii.jpg?updatedAt=1754203544573" alt="Raji">
+        <h3>👼 Raji</h3>
+        <p>Silent face, mischievous mind! Her day’s mission? Tease Shannu till her BP rises 😂 She eats like a sparrow but talks like a mic drop queen. She forgets her food, but never forgets to create chaos. She and Yoshitha are the certified “crush curators” of the gang too. Crush list leaks = ultimate fun!</p>
+      </div>
+
+      <!-- Shannu -->
+      <div class="card">
+        <img src="https://ik.imagekit.io/fu4uxhoyq/shannu.jpg?updatedAt=1754202321273" alt="Shannu">
+        <h3>🌾 Shannu</h3>
+        <p>Lazy girl with royal Reddy vibes 👑 If we had a gang queen, she’d sit on a couch with snacks and order us around. Gets angry for silly reasons but we all know that’s her love language. She owns 6 acres of land but rents all her emotions to Raji. Pure chaos and pure heart!</p>
+      </div>
+
+      <!-- Susmitha -->
+      <div class="card">
+        <img src="https://ik.imagekit.io/fu4uxhoyq/sush.jpg?updatedAt=1754202321640" alt="Susmitha">
+        <h3>🌱 Susmitha</h3>
+        <p>Tallest, most active, and proudly the only pure vegetarian in the gang! She’s a “bakka beauty” with a sharp mind. Always present in group fun, always ready to pull someone’s leg, and always smiling with 0% drama and 100% energy. Full-on positive vibes!</p>
+      </div>
+
+      <!-- Naini -->
+      <div class="card">
+        <img src="https://ik.imagekit.io/fu4uxhoyq/nainii.jpg?updatedAt=1754202843237" alt="Naini" width="50px">
+        <h3>🐱 Naini (Cat)</h3>
+        <p>The innocent devil of the squad. Her energy is baby-level cute but also mischief-level high. Puppy lover to the core 🐶, she hates cameras like vampires hate sunlight. If anyone tries to post her pic, she’ll unfriend them on all 7 social platforms 😂 Our softest, sweetest CAT!</p>
+      </div>
+
+      <!-- Ammu -->
+      <div class="card">
+        <img src="https://ik.imagekit.io/fu4uxhoyq/ammu.jpg?updatedAt=1754202321767" alt="Ammu">
+        <h3>💇 Ammu</h3>
+        <p>Our silent storm. Calm on the outside, but full of care and clarity within. She’s the one who observes quietly, understands deeply, and supports us in the most thoughtful ways. Her presence brings peace, her words bring comfort. And with her magical hands, she’s our go-to hair stylist 💇‍♀️. A rare blend of silent strength, style, and soul.
+
+</p>
+      </div>
+
+      <!-- Jyo -->
+      <div class="card">
+        <img src="https://ik.imagekit.io/fu4uxhoyq/jyo.jpg?updatedAt=1754202321440" alt="Jyo">
+        <h3>🛐 Jyo</h3>
+        <p>Spiritual soul of the gang. Doesn’t watch movies, listens only to devotional songs, and becomes our moral police when we go too crazy. Yet she sticks with us no matter what. Without her, we’d have no brakes. With her, we find balance. Our guiding lamp in this wild storm called friendship!</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>8 brains, 8 hearts, 800+ messages a day — powered by laughter, chaos & unlimited screenshots 📸💬</p>
+<p>— Yours forever, the craziest bond called OCTO 💗</p>
+
+    </div>
+  </div>
+
+  <canvas id="confetti-canvas"></canvas>
+  <script src="script.js"></script>
+  <audio id="bg-music" loop>
+  <source src="https://ik.imagekit.io/fu4uxhoyq/letha%20letha%20snealevo%20song.mp3?updatedAt=1754204884401" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+
+<button onclick="document.getElementById('bg-music').muted = false; document.getElementById('bg-music').play(); this.style.display='none';" style="position:fixed; top:10px; right:10px; padding:10px 15px; z-index:1000; background:#ff99cc; color:white; border:none; border-radius:10px; cursor:pointer; box-shadow: 0 0 10px #ff66cc;">
+    🔊 Click to Play BGM
+  </button>
+
+
+</body>
+</html>
